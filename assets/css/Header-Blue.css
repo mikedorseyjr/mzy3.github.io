@@ -1,6 +1,6 @@
 .header-blue {
-  background:linear-gradient(135deg, #ae86ef, #21a9af);
-  background-color:#184e8e;
+  /*background:linear-gradient(135deg, #ae86ef, #21a9af);*/
+  /*background-color:#184e8e;*/
   padding-bottom:120px;
   font-family:'Source Sans Pro', sans-serif;
 }
@@ -125,7 +125,7 @@
 }
 
 .header-blue .action-button, .header-blue .action-button:active {
-  border:1px solid rgba(255,255,255,0.7);
+  border:1px solid #ae86ef;
   border-radius:20px;
   color:#ebeff1;
   box-shadow:none;
