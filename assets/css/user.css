@@ -1,3 +1,15 @@
+@media (max-width: 767px) {
+  .text-right {
+    text-align:center;
+  }
+}
+
+@media (max-width: 767px) {
+  .now-what {
+    text-align:center;
+  }
+}
+
 .navbar {
   margin-bottom:0;
   border:none;
