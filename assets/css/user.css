@@ -4,7 +4,19 @@
   }
 }
 
+@media (max-width: 991px) {
+  .text-right {
+    text-align:center;
+  }
+}
+
 @media (max-width: 767px) {
+  .now-what {
+    text-align:center;
+  }
+}
+
+@media (max-width: 991px) {
   .now-what {
     text-align:center;
   }
