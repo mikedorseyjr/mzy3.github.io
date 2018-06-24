@@ -5,12 +5,27 @@
 }
 
 @media (max-width: 767px) {
-  .carousel-col {
-    height:500px !important;
+  .col-md-6.what-col {
+    padding-top:50px !important;
+    padding-bottom:10px !important;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
+  .hero-image {
+    height:100px !important;
+    width:auto !important;
+    margin-top:40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-col {
+    height:550px !important;
+  }
+}
+
+@media (max-width: 767px) {
   .carousel-img {
     max-width:100%;
     height:auto;
