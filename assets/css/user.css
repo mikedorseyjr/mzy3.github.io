@@ -4,8 +4,10 @@
   }
 }
 
-.carousel-col {
-  height:500px !important;
+@media (max-width: 767px) {
+  .carousel-col {
+    height:500px !important;
+  }
 }
 
 @media (max-width: 480px) {
