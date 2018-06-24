@@ -4,6 +4,20 @@
   }
 }
 
+.carousel-col {
+  height:500px !important;
+}
+
+@media (max-width: 480px) {
+  .carousel-img {
+    max-width:100%;
+    height:auto;
+    min-height:0px;
+    display:block;
+    max-height:100%;
+  }
+}
+
 @media (max-width: 991px) {
   .text-right {
     text-align:center;
@@ -191,7 +205,7 @@ section.testimonials {
 }
 
 .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-  color:#ffffff;
+  color:#ae86ef;
   /*background-color:#106a8c;*/
   /*border-color:#0c516c;*/
 }
@@ -225,7 +239,7 @@ a:focus {
 }
 
 .navbar-default .navbar-link {
-  color:#999999;
+  color:#ffffff;
 }
 
 .navbar-default .navbar-link {
