@@ -4,8 +4,8 @@ var header = //$('.header-parallax')
     $('header');
 
 var backgrounds = new Array(
-    'url(couple1.jpg)'
-  , 'url(pexels-photo-984935.jpg)'
+'url(couple2.jpg)',
+    'url(couple1.jpg)', 'url(pexels-photo-984935.jpg)'
 , 'url(couple2.jpg)'
     , 'url(couple3.jpg)'
 
