@@ -1,3 +1,42 @@
+@media (max-width: 991px) {
+  .free-date-transparent {
+    padding-right:15% !important;
+    padding-left:15% !important;
+  }
+}
+
+.accordian-button {
+  width:100%;
+}
+
+@media (max-width: 767px) {
+  .container.about {
+    height:700px;
+  }
+}
+
+@media (max-width: 767px) {
+  .free-date-transparent {
+    padding-right:10% !important;
+    padding-left:10% !important;
+    padding-top:40% !important;
+  }
+}
+
+.style-button {
+  background-color:transparent !important;
+  color:#ae86ef;
+  font-weight:400;
+  border:1px solid #ae86ef !important;
+  border-radius:30px !important;
+}
+
+.form-control.sign-up {
+  border-bottom:1px solid #ae86ef !important;
+  color:rgb(65,65,65) !important;
+  background-color:transparent !important;
+}
+
 @media (max-width: 767px) {
   .text-right {
     text-align:center;
@@ -68,6 +107,15 @@
   border:none;
 }
 
+.navbar-fixed-top.scrolled {
+  background-color:#ae86ef !important;
+  transition:background-color 200ms linear;
+}
+
+.navv.scrolled {
+  color:#ffffff !important;
+}
+
 @media (min-width:992px) {
   .hero .get-it {
     text-align:right;
@@ -122,7 +170,7 @@ div.iphone-mockup {
   border:1px solid #444;
   background-color:#aaa;
   overflow:hidden;
-  background:url(screen-content-iphone-6.jpg);
+  background:url(../../assets/img/screen-content-iphone-6.jpg);
   background-size:cover;
   background-position:center;
 }
@@ -211,7 +259,7 @@ section.testimonials {
 }
 
 .btn-primary:active:hover, .btn-primary.active:hover, .open > .dropdown-toggle.btn-primary:hover, .btn-primary:active:focus, .btn-primary.active:focus, .open > .dropdown-toggle.btn-primary:focus, .btn-primary:active.focus, .btn-primary.active.focus, .open > .dropdown-toggle.btn-primary.focus {
-  color:#ffffff;
+  color:#ae86ef;
   /*background-color:#0c516c;*/
   /*border-color:#052531;*/
 }
@@ -228,13 +276,12 @@ section.testimonials {
 }
 
 a:hover, a:focus {
-  color:#158cba;
-  text-decoration:underline;
+  color:#ae86ef;
+  text-decoration:none !important;
 }
 
 a {
-  color:#158cba;
-  text-decoration:none;
+  color:#ffffff;
 }
 
 .btn.btn-primary.btn-lg {
@@ -321,5 +368,26 @@ blockquote footer, blockquote small, blockquote .small {
 
 .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
   text-shadow:none;
+}
+
+@media (min-width: 992px) {
+  .row.features {
+    padding-left:150px !important;
+    padding-right:150px !important;
+  }
+}
+
+.panel-default > .panel-heading {
+  color:#333333;
+  background-color:transparent;
+  border-bottom:1px solid #ae86ef;
+}
+
+.panel {
+  margin-bottom:20px;
+  background-color:#ffffff;
+  border:1px solid transparent;
+  border-radius:4px;
+  box-shadow:none;
 }
 
