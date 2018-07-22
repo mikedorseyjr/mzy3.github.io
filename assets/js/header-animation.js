@@ -34,8 +34,11 @@ $(function () {
   $(document).scroll(function () {
     var $nav = $(".navbar-fixed-top");
       var $navlink = $(".navv");
+      var $navbutton = $(".navv2");
       
       $navlink.toggleClass('scrolled', $(this).scrollTop() > $('#nav2').offset().top);
+      
+       $navbutton.toggleClass('scrolled', $(this).scrollTop() > $('#nav2').offset().top);
       
     $nav.toggleClass('scrolled', $(this).scrollTop() > $('#nav2').offset().top);
       

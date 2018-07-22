@@ -134,8 +134,9 @@
 }
 
 .action-button:hover {
-  color:#fff;
-  background-color:rgba(174,134,239,0.3) !important;
+  color:#fff !important;
+  background-color:rgb(174,134,239) !important;
+  border:1px solid #ae86ef !important;
 }
 
 .header-blue .action-button.btn-lg {

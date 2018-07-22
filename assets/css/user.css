@@ -137,6 +137,10 @@
   color:#ffffff !important;
 }
 
+.navv2.scrolled:hover {
+  background-color:white !important;
+}
+
 .navv.scrolled:hover {
   color:#333333 !important;
 }
@@ -315,11 +319,6 @@ a {
 }
 
 .btn.btn-primary.btn-lg {
-}
-
-.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
-  /*outline:none;*/
-  /*outline-offset:0px;*/
 }
 
 .btn:hover {
