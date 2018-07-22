@@ -122,7 +122,7 @@
   background:#ebeff1;
 }
 
-.header-blue .action-button, .header-blue .action-button:active {
+.action-button, .action-button:active {
   border:1px solid #ae86ef;
   color:#ebeff1;
   box-shadow:none;
@@ -133,9 +133,9 @@
   outline:none;
 }
 
-.header-blue .action-button:hover {
+.action-button:hover {
   color:#fff;
-  background-color:rgba(174,134,239,0.3);
+  background-color:rgba(174,134,239,0.3) !important;
 }
 
 .header-blue .action-button.btn-lg {

@@ -5,8 +5,28 @@
   }
 }
 
+.panel-body {
+  padding:25px;
+  padding-bottom:50px;
+}
+
+.panel-title {
+  background-color:transparent !important;
+}
+
+.accordian-button:hover, .accordian-button:focus {
+  color:white !important;
+}
+
 .accordian-button {
+  letter-spacing:0.1px;
   width:100%;
+  font-family:Source sans pro;
+  font-size:20px;
+  color:#ae86ef !important;
+  font-weight:800 !important;
+  padding-top:10px;
+  padding-bottom:10px;
 }
 
 @media (max-width: 767px) {
@@ -108,12 +128,16 @@
 }
 
 .navbar-fixed-top.scrolled {
-  background-color:rgba(174,134,239,0.9) !important;
+  background-color:#ae86ef !important;
   transition:background-color 200ms linear;
 }
 
 .navv.scrolled {
   color:#ffffff !important;
+}
+
+.navv.scrolled:hover {
+  color:#333333 !important;
 }
 
 @media (min-width:992px) {
@@ -122,6 +146,11 @@
     margin-top:80px;
     padding-right:30px;
   }
+}
+
+.text-left.description {
+  letter-spacing:0.3px !important;
+  font-size:16px;
 }
 
 @media (max-width:992px) {
@@ -260,8 +289,8 @@ section.testimonials {
 
 .btn-primary:active:hover, .btn-primary.active:hover, .open > .dropdown-toggle.btn-primary:hover, .btn-primary:active:focus, .btn-primary.active:focus, .open > .dropdown-toggle.btn-primary:focus, .btn-primary:active.focus, .btn-primary.active.focus, .open > .dropdown-toggle.btn-primary.focus {
   color:#ae86ef;
-  /*background-color:#0c516c;*/
-  /*border-color:#052531;*/
+  background-color:rgba(174,134,239, 0.5);
+  border-color:#ae86ef;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-group.open .dropdown-toggle.btn-primary {
@@ -288,13 +317,13 @@ a {
 }
 
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
-  /*outline:5px auto -webkit-focus-ring-color;*/
-  /*outline-offset:-2px;*/
+  /*outline:none;*/
+  /*outline-offset:0px;*/
 }
 
 .btn:hover {
-  margin-top:1px;
-  border-bottom-width:3px;
+  margin-top:0px;
+  border-bottom-width:0px;
 }
 
 a:focus {
@@ -318,12 +347,6 @@ a:focus {
 
 .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
   font-size:20px;
-}
-
-.navbar-default .navbar-link {
-}
-
-.btn.btn-default.action-button {
 }
 
 blockquote footer:before, blockquote small:before, blockquote .small:before {
@@ -378,16 +401,48 @@ blockquote footer, blockquote small, blockquote .small {
 }
 
 .panel-default > .panel-heading {
-  color:#333333;
-  background-color:transparent;
-  border-bottom:1px solid #ae86ef;
+  color:#6c6c6c;
+  background-color:transparent !important;
 }
 
 .panel {
   margin-bottom:20px;
-  background-color:#ffffff;
+  background-color:transparent;
   border:1px solid transparent;
   border-radius:4px;
   box-shadow:none;
+}
+
+h4, .h4 {
+  font-size:24px !important;
+}
+
+.accordian-text {
+  font-family:Raleway, sans-serif;
+  font-size:16px;
+  color:rgb(221,221,221);
+  letter-spacing:0.2px;
+  padding-bottom:25px;
+  border-bottom:1px solid #d3d3d3;
+  line-height:23px;
+}
+
+body {
+  font-family:Source sans pro, sans-serif !important;
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%;
+}
+
+.navbar-default .navbar-link:hover {
+  color:#ae86ef;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+  outline:none;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+  outline:none;
+  outline-offset:0px;
 }
 

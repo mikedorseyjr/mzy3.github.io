@@ -1,6 +1,6 @@
 $(document).ready(
     function(){
-var header = //$('.header-parallax')
+var header = 
     $('header');
 
 var backgrounds = new Array(
@@ -17,23 +17,33 @@ function nextBackground() {
     current++;
     current = current % backgrounds.length;
     //header.css('background-image', backgrounds[current]);
-          header.not('#nav').fadeTo('slow',0.7,function(){
-          header.css('background-image', backgrounds[current]).not('#nav').fadeTo('slow',1.0)});
+          header.fadeTo('slow',0.7,function(){
+          header.css('background-image', backgrounds[current]).fadeTo('slow',1.0)});
         
 }
 setInterval(nextBackground, 4500);
 
 header.css('background-image', backgrounds[0]);
   
+        
+var $acc = $('.no-collapse');
+
+$acc.removeClass('in');
     
 $(function () {
   $(document).scroll(function () {
     var $nav = $(".navbar-fixed-top");
       var $navlink = $(".navv");
       
-      $navlink.toggleClass('scrolled', $(this).scrollTop() > $navlink.height());
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      $navlink.toggleClass('scrolled', $(this).scrollTop() > $('#nav2').offset().top);
+      
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $('#nav2').offset().top);
+      
   });
 });
+        
+        
+        
+
     
 });
