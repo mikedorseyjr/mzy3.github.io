@@ -1,8 +1,97 @@
+.text-center.myaccount.form-label.past-dates {
+  color:#ae86ef;
+  font-size:16px !important;
+}
+
+.form-group.edit-account {
+  margin-bottom:6px;
+  margin-top:6px;
+}
+
+@media (max-width: 767px) {
+  .text-right.myaccount.form-label {
+    text-align:left !important;
+  }
+}
+
+.text-right.myaccount.form-label.past-dates.date {
+  color:rgb(227,227,227);
+  font-size:15px !important;
+}
+
+input[type=text]:focus {
+}
+
+.form-control.edit-account {
+  background-color:rgb(40,40,40);
+  border:none;
+}
+
+.row.my-account.past-dates {
+  padding-bottom:5px;
+  padding-top:5px;
+}
+
+.row.my-account.past-dates:hover {
+  background-color:rgb(58,58,58);
+  /*border-bottom:1px solid grey;*/
+  box-shadow:2px 2px 5px rgba(16,16,16,0.3);
+}
+
+input[type=text] {
+  -webkit-transition:width 0.4s ease-in-out;
+  transition:width 0.4s ease-in-out;
+}
+
+.form-control.sign-up {
+  border:none;
+  box-shadow:none;
+  border-radius:0px;
+}
+
+.action-button {
+  border-radius:4px !important;
+}
+
+.action-button:focus {
+  background-color:inherit;
+  border-color:inherit;
+}
+
+.myaccount.form-label {
+  font-weight:300 !Important;
+  font-size:16px !important;
+}
+
+.my-account.links {
+  font-size:14px;
+  padding-bottom:14px;
+}
+
+.my-account.links:hover, .my-account.links:focus {
+  border-bottom:2px solid #ae86ef !important;
+}
+
 @media (max-width: 991px) {
   .free-date-transparent {
     padding-right:15% !important;
     padding-left:15% !important;
   }
+}
+
+.btn.btn-default.action-button.logout {
+  border:none;
+  font-size:15px;
+}
+
+.btn.btn-default.action-button.logout:hover, .btn.btn-default.action-button.logout:focus {
+  border:none !important;
+  font-size:15px;
+  background-color:transparent !important;
+}
+
+html {
+  overflow-x:hidden !important;
 }
 
 .panel-body {
@@ -24,7 +113,7 @@
   font-family:Source sans pro;
   font-size:20px;
   color:#ae86ef !important;
-  font-weight:800 !important;
+  font-weight:300 !important;
   padding-top:10px;
   padding-bottom:10px;
 }
@@ -49,6 +138,14 @@
   font-weight:400;
   border:1px solid #ae86ef !important;
   border-radius:30px !important;
+}
+
+.form-control.sign-up {
+  border-bottom:1px solid #ae86ef !important;
+  color:rgb(65,65,65) !important;
+  background-color:transparent !important;
+  background-color:rgb(38,38,38) !important;
+  border-radius:5px;
 }
 
 .form-control.sign-up {
@@ -444,5 +541,18 @@ body {
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
   outline:none;
   outline-offset:0px;
+}
+
+.glyphicon {
+  position:relative;
+  top:1px;
+  display:inline-block;
+  font-family:'Glyphicons Halflings';
+  font-style:normal;
+  font-weight:normal;
+  line-height:1;
+  color:grey;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
 

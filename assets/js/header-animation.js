@@ -29,10 +29,17 @@ header.css('background-image', backgrounds[0]);
 var $acc = $('.no-collapse');
 
 $acc.removeClass('in');
+        
+        
+$('.navbar.my-account').hover( function(){
+    $('.nav-links').css('display', 'block');
+}, function(){
+    $('.nav-links').css('display', 'none');
+});
     
 $(function () {
   $(document).scroll(function () {
-    var $nav = $(".navbar-fixed-top");
+    var $nav = $(".navbar-fixed-top.index");
       var $navlink = $(".navv");
       var $navbutton = $(".navv2");
       
