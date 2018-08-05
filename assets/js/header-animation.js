@@ -31,7 +31,7 @@ var $acc = $('.no-collapse');
 $acc.removeClass('in');
         
         
-$('.navbar.my-account').hover( function(){
+$('.navbar.my-account, .navbar.signup').hover( function(){
     $('.nav-links').css('display', 'block');
 }, function(){
     $('.nav-links').css('display', 'none');

@@ -1,3 +1,55 @@
+.navbar-toggle.my-account {
+  border-radius:20px;
+  height:36px;
+  padding-top:7px;
+  margin-top:14px;
+}
+
+.navbar-toggle.collapsed.my-account {
+  border-radius:20px;
+  height:36px;
+  padding-top:7px;
+  margin-top:14px;
+}
+
+.navbar-toggle.my-account:focus {
+  border-radius:20px !important;
+  height:36px;
+  padding-top:7px;
+  margin-top:14px;
+}
+
+@media (max-width: 767px) {
+  .navbar.navbar-default.navbar-fixed-top.navigation-clean-search.navigation.my-account {
+    padding-bottom:8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .edit-account.section {
+    margin-top:55px;
+  }
+}
+
+@media (max-width: 767px) {
+  .text-center.my-account.heading {
+    margin-top:70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container.visible-sm-block.visible-md-block.visible-lg-block.visible-xs-inline {
+    box-shadow:none !important;
+    background-color:inherit !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn.btn-default.action-button.logout {
+    float:none !important;
+  }
+}
+
 @media (max-width: 767px) {
   .bold-slogan {
     font-size:40px !important;
