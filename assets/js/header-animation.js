@@ -26,9 +26,6 @@ setInterval(nextBackground, 4500);
 header.css('background-image', backgrounds[0]);
   
         
-var $acc = $('.no-collapse');
-
-$acc.removeClass('in');
         
         
 $('.navbar.my-account, .navbar.signup').hover( function(){
@@ -51,9 +48,47 @@ $(function () {
       
   });
 });
+       
+        
+$( ".accordian-button" ).click(function() {
+$(this).children().toggleClass("change");
+});
+        
+// $(".upgrade-button").click(function() {
+//     $(".panel-collapse.collapse.item-1.premium").toggleClass('in');
+// });
+        
+ $(".pay.paypal").hover( function() {
+    $(".pay-label.paypal").toggleClass('hover');
+});       
+      
+ $(".pay.applepay").hover( function() {
+    $(".pay-label.applepay").toggleClass('hover');
+}); 
         
         
+
+$(function() {
+    var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+ if(dd<10){
+        dd='0'+dd
+    } 
+    if(mm<10){
+        mm='0'+mm
+    } 
+
+today = yyyy+'-'+mm+'-'+dd;
+document.getElementById("plan-date").setAttribute("min", today);
+    
+    
+});      
+
         
+
+
 
     
 });

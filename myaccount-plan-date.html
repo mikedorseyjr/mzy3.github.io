@@ -7,7 +7,11 @@
     <title>sinchV2</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/typicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Antic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arya">
@@ -44,8 +48,9 @@
     <section class="hidden-xs" style="height:107px;background-color:#232323;">
         <div class="container hidden-xs navbar navbar-default navbar-fixed-top" style="margin:0px;width:100%;height:auto;padding-top:65px;position:fixed;background-color:#232323;border-bottom:1px solid rgb(214,214,214);">
             <div class="row" style="background-color:#fbfbfb;">
-                <div class="col-md-12" style="background-color:#fbfbfb;padding-top:9px;">
-                    <p class="text-capitalize" style="margin-top:0px;font-size:15px;padding-top:5px;margin-bottom:15px;text-align:center;"><a href="myaccount-edit.html" class="my-account links">edit account</a><a href="myaccount-past-dates.html" class="my-account links">Your Dates</a><a href="myaccount-plan-date.html" class="my-account links" style="border-bottom:2px solid #ae86ef;color:#ae86ef;">Plan a date</a>                        </p>
+                <div class="col-md-12" style="background-color:#ffffff;padding-top:9px;">
+                    <p class="text-capitalize" style="margin-top:0px;font-size:15px;padding-top:5px;margin-bottom:15px;text-align:center;"><a href="myaccount-edit.html" class="my-account links"><strong>EDIT ACCOUNT</strong></a><a href="myaccount-past-dates.html" class="my-account links"><strong>YOUR DATES</strong></a><a href="myaccount-plan-date.html" class="my-account links"
+                            style="border-bottom:2px solid #ae86ef;color:#ae86ef;"><strong>PLAN A DATE</strong></a> </p>
                 </div>
             </div>
         </div>
@@ -72,13 +77,13 @@
     <section style="height:auto;background-color:#303030;">
         <div class="container" style="margin-right:0px;margin-left:0px;width:100%;">
             <div class="row">
-                <div class="col-md-12" style="background-color:#f1f1f1;padding-bottom:160px;">
+                <div class="col-md-12" style="background-color:#f1f1f1;padding-bottom:160px;background-repeat:no-repeat;background-size:cover;">
                     <div style="height:auto;padding-left:0px;padding-top:60px;">
-                        <div class="container visible-sm-block visible-md-block visible-lg-block visible-xs-inline" style="width:697px;box-shadow:0px 0px 4px rgba(186,186,186,0.7);padding-top:35px;padding-bottom:35px;background-color:#ffffff;">
-                            <h4 class="text-center my-account heading" style="margin-bottom:44px;">HEADING?</h4>
+                        <div class="container visible-sm-block visible-md-block visible-lg-block visible-xs-inline" style="width:697px;box-shadow:0px 0px 4px rgba(186,186,186,0.7);padding-top:35px;padding-bottom:82px;background-color:rgb(255,255,255);">
+                            <h5 class="text-center my-account heading" style="margin-bottom:44px;color:#ae86ef;font-size:18px;margin-top:24px;letter-spacing:1px;">DATE DETAILS</h5>
                             <div class="row">
                                 <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-                                    <div class="form-group edit-account" style="text-align:center;"><span class="label label-default my-account dark">Date</span><input type="date" class="form-border"></div>
+                                    <div class="form-group edit-account" style="text-align:center;"><span class="label label-default my-account dark">Date</span><input type="date" id="plan-date" class="form-border"></div>
                                 </div>
                             </div>
                             <div class="row">
@@ -95,11 +100,22 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-                                    <div class="form-group edit-account" style="text-align:center;"><span class="label label-default my-account dark">What's the mood?</span><input type="text" class="form-border"></div>
+                                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2" style="padding-bottom:24px;">
+                                    <div class="form-group edit-account" style="text-align:center;"><span class="label label-default my-account dark">What's the mood?</span>
+                                        <div class="dropdown"><button class="btn btn-default dropdown-toggle form-border" data-toggle="dropdown" aria-expanded="false" type="button" style="margin-bottom:0px;"><span class="caret" style="margin-top:1px;"></span></button>
+                                            <ul class="dropdown-menu city pull-right"
+                                                role="menu">
+                                                <li role="presentation"><a href="#" class="dropdown-link light" style="border-bottom:1px solid white;">Fun</a></li>
+                                                <li role="presentation"><a href="#" class="dropdown-link light" style="border-bottom:1px solid white;">Casual/Divy</a></li>
+                                                <li role="presentation"><a href="#" class="dropdown-link light" style="border-bottom:1px solid white;">Intellectual</a></li>
+                                                <li role="presentation"><a href="#" class="dropdown-link light" style="border-bottom:1px solid white;">Interactive</a></li>
+                                                <li role="presentation"><a href="#" class="dropdown-link light">Outdoors</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row" style="margin-bottom:57px;">
                                 <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
                                     <div class="form-group edit-account" style="text-align:center;"><span class="label label-default my-account dark">Additional Details</span><textarea class="form-border" style="height:119px;margin-bottom:0px;"></textarea>
                                         <p class="help-block text-left" style="font-size:11px;">Neighborhood preference? Special occasion?</p>
@@ -107,14 +123,14 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12 col-md-offset-0 plan-date" style="text-align:center;padding-left:0px;padding-right:0px;">
-                                    <div class="form-group" style="margin-top:45px;"><button class="btn btn-default action-button" type="button" style="width:308px;height:44px;font-size:15px;padding-right:0px;padding-left:0px;"><a class="button-link sign-up" style="color:#ae86ef;padding-top:10px;padding-bottom:10px;font-weight:400 !important;letter-spacing:1px;padding-right:34%;padding-left:34%;">plan my date</a></button></div>
-                                </div>
-                            </div>
+                                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2" style="margin-bottom:21px;"><button class="btn btn-default action-button pay paypal" type="button"><i class="fa fa-paypal" style="font-size:20px;"></i><span class="label label-default pay-label paypal">Submit with PayPal</span></button></div>
+                                <div
+                                    class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2"><button class="btn btn-default action-button pay applepay" type="button" style="background-color:black;border:none;"><i class="fab fa-apple-pay" style="font-size:29px;color:white;"></i><span class="label label-default pay-label applepay" style="color:white;">Submit with Apple Pay</span></button></div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <div class="footer-basic" style="padding-top:43px;padding-bottom:33px;height:161px;background-color:#ae86ef;">

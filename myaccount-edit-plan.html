@@ -7,7 +7,11 @@
     <title>sinchV2</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/typicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Antic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arya">
@@ -45,8 +49,10 @@
         <div class="container navbar navbar-default navbar-fixed-top" style="margin:0px;width:100%;height:auto;padding-top:65px;position:fixed;background-color:#232323;border-bottom:1px solid rgb(222,222,222);">
             <div class="row" style="background-color:#fbfbfb;">
                 <div class="col-md-12" style="background-color:#fbfbfb;padding-top:9px;">
-                    <p class="text-capitalize" style="margin-top:0px;font-size:15px;padding-top:5px;margin-bottom:15px;text-align:center;"><a href="myaccount-edit.html" class="my-account links" style="color:#ae86ef;border-bottom:2px solid #ae86ef;">edit account</a><a href="myaccount-past-dates.html" class="my-account links">Your Dates</a><a href="myaccount-plan-date.html"
-                            id="nav" class="my-account links" style="clor:#ae86ef;">Plan a date</a> </p>
+                    <p class="text-capitalize" style="margin-top:0px;font-size:15px;padding-top:5px;margin-bottom:15px;text-align:center;"><a href="myaccount-edit.html" class="my-account links" style="color:#ae86ef;border-bottom:2px solid #ae86ef;"><strong>EDIT ACCOUNT</strong></a><a href="myaccount-past-dates.html" class="my-account links"><strong>YOUR DATES</strong></a>
+                        <a
+                            href="myaccount-plan-date.html" id="nav" class="my-account links" style="clor:#ae86ef;"><strong>PLAN A DATE</strong></a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -75,28 +81,71 @@
             <div class="row">
                 <div class="col-md-3 edit-account" style="text-align:center;padding-right:0px;padding-left:0px;position:static;padding-bottom:25px;padding-top:70px;">
                     <div class="edit-account links"><a href="myaccount-edit.html" class="edit-account nav-link">ACCOUNT DETAILS</a></div>
-                    <div class="edit-account links"><a href="#" class="edit-account nav-link">EDIT PREFERENCES</a></div>
+                    <div class="edit-account links"><a href="myaccount-partner-profile.html" class="edit-account nav-link">PARTNER PROFILE</a></div>
                     <div class="edit-account links"><a href="myaccount-edit-plan.html" class="edit-account nav-link" style="color:white;">YOUR PLAN</a></div>
                 </div>
                 <div class="col-md-9" style="background-color:#eaeaea;padding-bottom:160px;">
                     <div style="height:auto;padding-left:0px;padding-top:60px;">
                         <div class="container visible-sm-block visible-md-block visible-lg-block visible-xs-inline" style="width:625px;background-color:rgb(255,255,255);padding-top:42px;box-shadow:0px 0px 4px rgba(200,200,200,0.3);">
-                            <div class="row" style="padding-bottom:56px;">
+                            <div class="row" style="padding-bottom:0px;">
                                 <div class="col-md-6 col-md-offset-3" style="text-align:center;padding-top:30px;">
                                     <p style="color:rgb(167,167,167);">Your Plan</p>
-                                    <h4>Sinch Basic</h4>
+                                    <h4 style="margin-bottom:0px;">Sinch Basic</h4>
+                                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="accordion-1">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" style="padding-top:0px;">
+                                                <h4 class="panel-title mini-accordian"><a role="button" data-toggle="collapse" data-parent="#accordion-1" aria-expanded="false" href="#accordion-1 .item-1" style="font-size:11px;color:#ae86ef;">See plan details</a></h4>
+                                            </div>
+                                            <div class="panel-collapse collapse item-1" role="tabpanel">
+                                                <div class="panel-body" style="border-bottom:1px solid rgb(207,207,207);">
+                                                    <p class="plan-details" style="fontsize:13px;">$9.99 per date</p>
+                                                    <p class="plan-details">Exclusive promotional date night offers</p>
+                                                    <p class="plan-details" style="padding-bottom:0px;margin-bottom:1px;">Notifications for birthday, anniversary, or other special occasions</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row" style="padding-bottom:56px;">
+                            <div class="row" style="padding-bottom:0px;margin-bottom:43px;">
                                 <div class="col-md-6 col-md-offset-3" style="text-align:center;padding-top:30px;">
-                                    <p class="text-center" id="edit-changes-saved" style="margin-bottom:15px;"></p>
-                                    <div class="form-group"><button class="btn btn-default action-button" type="button" style="width:200px;height:40px;font-size:15px;color:#ae86ef;">Upgrade to premium</button></div>
+                                    <p style="color:rgb(167,167,167);">Next Billing Date (if premium)</p>
+                                    <h4>08/08/18</h4><a href="#" style="font-size:11px;color:#ae86ef;">Cancel plan</a></div>
+                            </div>
+                        </div>
+                        <div class="container visible-sm-block visible-md-block visible-lg-block visible-xs-inline" style="width:625px;background-color:rgb(255,255,255);padding-top:42px;box-shadow:0px 5px 4px rgba(200,200,200,0.3);">
+                            <div class="row">
+                                <div class="col-md-12" style="text-align:center;padding-right:0px;padding-left:0px;">
+                                    <div class="panel-group" role="tablist" aria-multiselectable="true" id="accordion-2" style="margin-bottom:0px;">
+                                        <div class="panel panel-default" style="background-color:#ae86ef;border-radius:0px;border:none;">
+                                            <div class="panel-heading upgrade-button" role="tab" style="padding-bottom:22px;padding-top:16px;">
+                                                <h4 class="panel-title mini-accordian"><a role="button" data-toggle="collapse" data-parent="#accordion-2" aria-expanded="false" href="#accordion-2 .item-1" class="premium" style="letter-spacing:1px;">UPGRADE TO PREMIUM</a></h4>
+                                            </div>
+                                            <div class="panel-collapse collapse item-1 premium" role="tabpanel">
+                                                <div class="panel-body" style="background-color:#262626;border:none;padding-bottom:69px;">
+                                                    <div class="col-md-12">
+                                                        <h2 style="margin-bottom:0px;color:white;">$19.99</h2>
+                                                        <p style="font-size:13px;">billed monthly</p>
+                                                    </div>
+                                                    <div class="col-md-10 col-md-offset-1" style="text-align:left;margin-top:30px;margin-bottom:40px;">
+                                                        <p class="upgrade-premium">Three date plan itineraries throughout the month</p>
+                                                        <p class="upgrade-premium">Exclusive promotional date night offers</p>
+                                                        <p class="upgrade-premium">Customized suggestions&nbsp;for birthday, anniversary, or other special occasions<br></p>
+                                                        <p class="upgrade-premium">Direct contact with an Experience Specialist for concierge service<br></p>
+                                                    </div>
+                                                    <div class="col-md-6 col-md-offset-3 col-sm-5 col-sm-offset-1" style="padding-bottom:15px;"><button class="btn btn-default action-button pay paypal" type="button"><i class="fa fa-paypal" style="font-size:22px;"></i><span class="label label-default pay-label paypal">Continue with Paypal</span></button></div>
+                                                    <div
+                                                        class="col-md-6 col-md-offset-3 col-sm-5"><button class="btn btn-default action-button pay applepay" type="button" style="background-color:white;border:none;"><i class="fab fa-cc-apple-pay" style="font-size:28px;color:rgb(11,11,11);"></i><span class="label label-default pay-label applepay" style="color:rgb(0,0,0);">Continue with ApplePay</span></button></div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <div class="footer-basic" style="padding-top:43px;padding-bottom:33px;height:161px;background-color:#ae86ef;">

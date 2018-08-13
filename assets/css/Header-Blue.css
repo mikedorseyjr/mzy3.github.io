@@ -131,6 +131,7 @@
   background:transparent;
   transition:background-color 0.25s;
   outline:none;
+  border-radius:0px !Important;
 }
 
 .action-button:hover {
@@ -229,7 +230,7 @@
   border:1px solid #444;
   background-color:#aaa;
   overflow:hidden;
-  background:url(../../assets/img/screen-content-iphone-6.jpg);
+  background:url(screen-content-iphone-6.jpg);
   background-size:cover;
   background-position:center;
 }
