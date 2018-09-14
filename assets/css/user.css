@@ -1,4 +1,28 @@
-.cell-button {
+.check-label {
+  background-color:transparent;
+  color:#8f8f8f;
+  font-size:14px;
+  font-weight:300;
+}
+
+.check-label.selected {
+  color:#ae86ef;
+  font-weight:400;
+}
+
+.check-column.selected {
+  border-color:#ae86ef;
+}
+
+.check-column.hover {
+  border-color:#ae86ef;
+}
+
+.check-column {
+  border:1px solid rgb(237,237,237);
+  margin-bottom:8px;
+  padding-top:10px;
+  padding-bottom:10px;
 }
 
 .playbook-paragraph {
@@ -352,13 +376,6 @@ input[type]:focus {
   border-bottom:2px solid #ae86ef !important;
 }
 
-@media (max-width: 991px) {
-  .free-date-transparent {
-    padding-right:15% !important;
-    padding-left:15% !important;
-  }
-}
-
 .btn.btn-default.action-button.logout {
   border:none;
   font-size:15px;
@@ -404,14 +421,6 @@ html {
 @media (max-width: 767px) {
   .container.about {
     height:700px;
-  }
-}
-
-@media (max-width: 767px) {
-  .free-date-transparent {
-    padding-right:10% !important;
-    padding-left:10% !important;
-    padding-top:40% !important;
   }
 }
 

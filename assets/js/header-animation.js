@@ -67,6 +67,16 @@ $(this).children().toggleClass("change");
 }); 
         
         
+$( ".check-column" ).click(function() {
+$(this).toggleClass("selected");
+$(this).children().toggleClass("selected");
+});
+        
+$( ".check-column" ).hover(function() {
+$(this).toggleClass("hover");
+});
+     
+        
 
 $(function() {
     var today = new Date();
@@ -84,9 +94,7 @@ today = yyyy+'-'+mm+'-'+dd;
 document.getElementById("plan-date").setAttribute("min", today);
     
     
-});      
-
-        
+});         
 
 
 
