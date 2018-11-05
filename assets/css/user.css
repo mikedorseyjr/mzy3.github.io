@@ -5,6 +5,10 @@
   font-weight:300;
 }
 
+.nav-logo {
+  width:35px;
+}
+
 .check-label.selected {
   color:#ae86ef;
   font-weight:400;
